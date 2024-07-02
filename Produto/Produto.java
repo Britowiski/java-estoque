@@ -56,16 +56,29 @@ public class Produto {
     }
 
     public static void main(String[] args){
-        Produto produto = new Produto("PC Gamer", 4500.00, 4);
-        produto.exibirIformacao();
+        Produto pcGamer = new Produto("PC Gamer", 4500.00, 4);
+        pcGamer.exibirIformacao();
 
         System.out.println("\nAdicionando 5 itens ao estoque...");
-        produto.adicionarEstoque(5);
-        produto.exibirIformacao();
+        pcGamer.adicionarEstoque(5);
+        pcGamer.exibirIformacao();
 
         System.out.println("\nRemovendo 2 itens ao estoque...");
-        produto.removerEstoque(4);
-        produto.exibirIformacao();
+        pcGamer.removerEstoque(4);
+        pcGamer.exibirIformacao();
+
+        System.out.println("\n");
+        
+        Produto notebook = new Produto("Notebook Gamer", 5000.00, 10);
+        notebook.exibirIformacao();
+
+        System.out.println("\nAdicionando 2 itens ao estoque...");
+        notebook.adicionarEstoque(3);
+        notebook.exibirIformacao();
+
+        System.out.println("\nRemovendo 5 itens ao estoque...");
+        notebook.removerEstoque(5);
+        notebook.exibirIformacao();
     }
 }
 
